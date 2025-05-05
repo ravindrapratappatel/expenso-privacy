@@ -2,9 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Expenso Legal</title>
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #000000;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .content {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-top: 0.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar">
@@ -19,14 +83,30 @@
     <section id="privacy">
       <h2>Privacy Policy</h2>
       <p>
-        We value your privacy. Expenso does not collect unnecessary personal data. Any information collected is used solely to enhance user experience and ensure smooth operation of the application.
+        Expenso respects your privacy. This app does not collect, store, or share any personal or sensitive user data. All information, such as expenses you enter, is stored locally on your device and remains fully under your control.
+      </p>
+      <p>
+        We do not use any third-party analytics, tracking tools, or ad networks. Expenso functions entirely offline, and your data is never transmitted to external servers.
+      </p>
+      <p>
+        You can delete all stored data from within the app at any time. Once deleted, data cannot be recovered.
       </p>
     </section>
 
     <section id="terms">
       <h2>Terms & Conditions</h2>
       <p>
-        By using Expenso, you agree to abide by our terms. Do not use the app for any unlawful activity. We reserve the right to suspend access for violation of our policies.
+        By using Expenso, you agree to the following terms:
+      </p>
+      <ul>
+        <li>The app is provided "as is" without any warranties or guarantees of any kind.</li>
+        <li>You are responsible for the data you enter and manage within the app.</li>
+        <li>We are not liable for any loss of data due to device failure, app uninstallation, or any other reason.</li>
+        <li>You must not use the app for any illegal or unauthorized purposes.</li>
+        <li>We reserve the right to update these terms as necessary. Continued use of the app implies acceptance of any changes.</li>
+      </ul>
+      <p>
+        If you have questions about this policy or your data, please contact us at <strong>[your@email.com]</strong>.
       </p>
     </section>
   </main>
